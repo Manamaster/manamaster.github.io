@@ -9,20 +9,20 @@
 <body style='margin : 0px; overflow: hidden;'>
 	<a-scene embedded artoolkit='sourceType: webcam;'>
   <a-assets>
-  <!-- Una nave bien papú -->
-    <a-asset-item id="BMW-obj" src="https://raw.githubusercontent.com/Manamaster/3DProvisional/master/Hidalgo.obj"></a-asset-item>
-    <a-asset-item id="BMW-mtl" src="https://raw.githubusercontent.com/Manamaster/3DProvisional/master/Hidalgo.mtl"></a-asset-item>
+  <!-- Hacer el preload del héroe aquí -->
+    <a-asset-item id="heroe-obj" src="https://raw.githubusercontent.com/Manamaster/3DProvisional/master/Hidalgo.obj"></a-asset-item>
+    <a-asset-item id="heroe-mtl" src="https://raw.githubusercontent.com/Manamaster/3DProvisional/master/Hidalgo.mtl"></a-asset-item>
 
 
  
   </a-assets>
 
-  <a-text value="We are stronger together!" color="#BBB"
+  <a-text value="Miguel Hidalgo y Costilla" color="#BBB"
           position="-0.5 0.5 1" scale="1 1 1"></a-text>
           
 <!-- Llamar al obj del preload -->  
 
-  <a-entity obj-model="obj: #BMW-obj; mtl: #BMW-mtl"  scale=".05 .05 .05" position="0 0 0"></a-entity>  
+  <a-entity obj-model="obj: #heroe-obj; mtl: #heroe-mtl"  scale=".05 .05 .05" position="0 0 0"></a-entity>  
 		<a-marker-camera preset='hiro'></a-marker-camera>
 	</a-scene>
     </body>
