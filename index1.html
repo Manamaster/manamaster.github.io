@@ -7,11 +7,18 @@
     <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
 </head>
 <body style='margin : 0px; overflow: hidden;'>
+    <table style="width:100%">
+      <tr>
+        <th>Hidalgo</th>
+        <th>Morelos</th>
+        <th>Cadete Mexicano</th>
+      </tr>
+    </table>
 	<a-scene embedded artoolkit='sourceType: webcam;'>
   <a-assets>
   <!-- Una nave bien papú -->
-    <a-asset-item id="BMW-obj" src="https://raw.githubusercontent.com/Manamaster/3DProvisional/master/Ying.obj"></a-asset-item>
-    <a-asset-item id="BMW-mtl" src="https://raw.githubusercontent.com/Manamaster/3DProvisional/master/Ying.mtl"></a-asset-item>
+    <a-asset-item id="3d-obj" src="https://raw.githubusercontent.com/Manamaster/3DProvisional/master/Ying.obj"></a-asset-item>
+    <a-asset-item id="3d-mtl" src="https://raw.githubusercontent.com/Manamaster/3DProvisional/master/Ying.mtl"></a-asset-item>
 
 
  
@@ -22,7 +29,7 @@
           
 <!-- Llamar al obj del preload -->  
 
-  <a-entity obj-model="obj: #BMW-obj; mtl: #BMW-mtl"  scale=".1 .1 .1" position="0 0 0"></a-entity>  
+  <a-entity obj-model="obj: #3d-obj; mtl: #3d-mtl"  scale=".1 .1 .1" position="0 0 0"></a-entity>  
 		<a-marker-camera preset='hiro'></a-marker-camera>
 	</a-scene>
     </body>
